@@ -16,7 +16,6 @@ public class EmployeeFinderTest {
     LocalDate birthday = LocalDate.of(2018, 10, 10);
     List<Employee> employeesList = Lists.list(
         new Employee(LocalDate.of(2018, 10, 10)),
-        // new Employee(LocalDate.of(2018, 12, 10)),
         new Employee(LocalDate.of(2017, 10, 10)));
     // when
     List<Employee> employeeList = new EmployeeFinder().find(employeesList, birthday);
