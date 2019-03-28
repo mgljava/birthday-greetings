@@ -22,7 +22,7 @@ public class EmployeeFinderTest {
   }
 
   @Test
-  public void should_not_find_employees_when_today_is_not_birthday() {
+  public void should_not_find_employees_when_given_date_is_not_birthday() {
     // given
     LocalDate birthday = LocalDate.of(2018, 10, 20);
 
