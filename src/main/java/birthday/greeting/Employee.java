@@ -4,17 +4,19 @@ import java.time.LocalDate;
 
 public class Employee {
 
+  private String lastName;
+  private String firstName;
   private LocalDate birthday;
+  private String email;
 
-  public Employee(LocalDate birthday) {
+  public Employee(String lastName, String firstName, LocalDate birthday, String email) {
+    this.lastName = lastName;
+    this.firstName = firstName;
     this.birthday = birthday;
+    this.email = email;
   }
 
   public LocalDate getBirthday() {
-    return birthday;
-  }
-
-  public void setBirthday(LocalDate birthday) {
-    this.birthday = birthday;
+    return this.birthday;
   }
 }
