@@ -20,4 +20,16 @@ public class EmployeeFinderTest {
     // then
     assertThat(employeeList).isNotEmpty();
   }
+
+  @Test
+  public void should_not_find_employees_when_today_is_not_birthday() {
+    // given
+    LocalDate birthday = LocalDate.of(2018, 10, 20);
+
+    // when
+    final List<Employee> employees = new EmployeeFinder().find(birthday);
+
+    // then
+    assertThat(employees).isEmpty();
+  }
 }
