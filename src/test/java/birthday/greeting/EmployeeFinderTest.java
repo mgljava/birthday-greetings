@@ -12,7 +12,7 @@ public class EmployeeFinderTest {
   @Test
   public void should_find_employees_by_birthday() {
     // given
-    LocalDate birthday = LocalDate.now();
+    LocalDate birthday = LocalDate.of(2018, 10, 10);
 
     // when
     List<Employee> employeeList = new EmployeeFinder().find(birthday);
