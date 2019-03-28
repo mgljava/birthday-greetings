@@ -19,4 +19,14 @@ public class Employee {
   public LocalDate getBirthday() {
     return this.birthday;
   }
+
+  @Override
+  public String toString() {
+    return "Employee{" +
+        "lastName='" + lastName + '\'' +
+        ", firstName='" + firstName + '\'' +
+        ", birthday=" + birthday +
+        ", email='" + email + '\'' +
+        '}';
+  }
 }
