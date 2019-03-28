@@ -1,6 +1,7 @@
 plugins {
     id 'java-library'
     id 'idea'
+    id 'jacoco'
 }
 
 repositories {
@@ -10,5 +11,6 @@ repositories {
 dependencies {
     testCompile 'org.assertj:assertj-core:3.12.2'
     implementation 'com.google.guava:guava:27.0.1-jre'
+    testImplementation 'org.mockito:mockito-core:2.25.1'
     testImplementation 'junit:junit:4.12'
 }
